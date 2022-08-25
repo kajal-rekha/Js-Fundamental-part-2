@@ -32,11 +32,11 @@ console.log(fahrenheitToCelsius(35));
 //answer 04....
 
 const numbers = [5, 10, 18, 27, 45, 75, 50, 35];
-let sum = 0;
+let num3 = 0;
 for (let i = 0; i < numbers.length; i++) {
-  sum = sum + numbers[i];
+  num3 = num3 + numbers[i];
 }
-console.log(sum);
+console.log(num3);
 
 //===================================
 
@@ -53,9 +53,9 @@ console.log(total / scors.length);
 
 //answer 06......
 
-let num1 = [2, -3, 0, 5, -1, 10, 9, -17, -55, 66];
+let num1 = [2, -3, 5, -1, 10, 9, -17, -55, 66];
 
-function numbers(num1) {
+function number(num1) {
   let positive = [];
 
   for (let i = 0; i < num1.length; i++) {
@@ -68,7 +68,7 @@ function numbers(num1) {
   return positive;
 }
 
-const positive = numbers(num1);
+const positive = number(num1);
 console.log(positive);
 
 //==================================
