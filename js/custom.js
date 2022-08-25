@@ -1,16 +1,15 @@
 "use strict";
 
-//answer 01..
+// Calculate the sum of numbers from 1 to 10
 
 let sum = 0;
 for (let i = 1; i <= 10; i++) {
   sum += i;
   console.log(sum);
 }
-
 //==============================
 
-//amswer 02......
+// Create a function that will convert from Celsius to Fahrenheit
 
 function celsiusToFahrenheit(celsius) {
   const fahrenheit = celsius * 1.8 + 32;
@@ -20,7 +19,7 @@ console.log(celsiusToFahrenheit(19));
 
 //==============================
 
-//answer 03....
+// Create a function that will convert from Fahrenheit to Celsius
 
 function fahrenheitToCelsius(fahrenheit) {
   const celsious = (fahrenheit - 32) * 1.8;
@@ -28,8 +27,9 @@ function fahrenheitToCelsius(fahrenheit) {
 }
 console.log(fahrenheitToCelsius(35));
 
-//========================================
-//answer 04....
+//================================
+
+//  Calculate the sum of numbers in an array of numbers
 
 const numbers = [5, 10, 18, 27, 45, 75, 50, 35];
 let num3 = 0;
@@ -38,9 +38,9 @@ for (let i = 0; i < numbers.length; i++) {
 }
 console.log(num3);
 
-//===================================
+//================================
 
-//answer 05....
+// Calculate the average of the numbers in an array of numbers
 
 const scors = [10, 20, 40, 60, 75, 100, 125];
 let total = 0;
@@ -51,7 +51,7 @@ console.log(total / scors.length);
 
 //================================
 
-//answer 06......
+// Create a function that receives an array of numbers and returns an array containing only the positive numbers
 
 let num1 = [2, -3, 5, -1, 10, 9, -17, -55, 66];
 
@@ -71,9 +71,9 @@ function number(num1) {
 const positive = number(num1);
 console.log(positive);
 
-//==================================
+//================================
 
-//answer 07....
+// Find the maximum number in an array of numbers
 const myArray = [5, 15, 20, 50, 30, 8, 100];
 
 let maxNumbers = myArray[0];
@@ -84,9 +84,9 @@ for (let i = 1; i < myArray.length; ++i) {
 }
 console.log(maxNumbers);
 
-//======================================
+//================================
 
-// answer 08....
+// Create a function that will return a Boolean specifying if a number is prime
 function isPrime(num) {
   if (num === 1) {
     return false;
@@ -104,3 +104,18 @@ function isPrime(num) {
 console.log(isPrime(3));
 
 //=========================
+
+//  Create a function that will merge two arrays and return the result as a new array
+
+const margeArreys = function (firstArray, secondArray) {
+  const marginArrey = firstArray.concat(secondArray);
+  const newArrey = marginArrey;
+  return newArrey;
+};
+
+const classFiveBoysName = ["Tasir", "Saqib", "Sourob", "Rahat", "Anowar"];
+
+const classFiveGirlsName = ["Noyan", "Sultana", "Sarmin", "Sania", "Afrina"];
+const classFiveAllStudents = margeArreys(classFiveBoysName, classFiveGirlsName);
+
+console.log(classFiveAllStudents);
