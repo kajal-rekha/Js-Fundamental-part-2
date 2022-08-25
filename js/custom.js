@@ -1,32 +1,5 @@
 "use strict";
 
-//answer 02....
-
-// function cToF(max){
-//   let roomTempatureInCelsius = 35;
-//       let roomTempatureInFahrenheit = roomTempatureInCelsius* 1.8 +32 ;
-//       if (roomTempatureInFahrenheit >= 86){
-//         console.log (`The tempature value in F ${roomTempatureInFahrenheit}, and Turn On the AC.`);
-// }
-
-// function cToF(celsius) {
-//   const roomTempatureInCelsius = 32;
-//   const roomTempatureInFahrenheit = roomTempatureInCelsius * 1.8 + 32;
-//   const message = `The temperature value is:${roomTempatureInFahrenheit}`;
-//   console.log(message);
-// }
-// function tempature(celsious) {
-//   const roomTempInCelcius = 32;
-//   const roomTempInFahrenheit = roomTempInCelcius * 1.8 + 32;
-//   console.log(roomTempInFahrenheit);
-//   if (roomTempInFahrenheit >= 86) {
-//     console.log(`The temperature value is: ${roomTempInFahrenheit}F.`);
-//   } else {
-//     console.log(`The temperature value is: ${roomTempInFahrenheit}F.`);
-//   }
-// }
-//=====================================
-
 //answer 01..
 
 let sum = 0;
@@ -36,6 +9,26 @@ for (let i = 1; i <= 10; i++) {
 }
 
 //==============================
+
+//amswer 02......
+
+function celsiusToFahrenheit(celsius) {
+  const fahrenheit = celsius * 1.8 + 32;
+  return fahrenheit;
+}
+console.log(celsiusToFahrenheit(19));
+
+//==============================
+
+//answer 03....
+
+function fahrenheitToCelsius(fahrenheit) {
+  const celsious = (fahrenheit - 32) * 1.8;
+  return celsious;
+}
+console.log(fahrenheitToCelsius(35));
+
+//========================================
 //answer 04....
 
 const numbers = [5, 10, 18, 27, 45, 75, 50, 35];
@@ -111,5 +104,3 @@ function isPrime(num) {
 console.log(isPrime(3));
 
 //=========================
-
-//amswer 09......
